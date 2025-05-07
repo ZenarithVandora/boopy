@@ -1,0 +1,252 @@
+* {
+    font-family: 'Baloo 2', cursive;
+    box-sizing: border-box;
+  }
+p{
+  font-size: 20px;
+}
+  
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+section:last-of-type {
+  border-bottom: none;
+}
+
+.sectitle{
+  font-size: 50px;
+}
+
+.navmains{
+    background-color: #21abf5b6;
+}
+
+.navbrd{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.homesec{
+    background-color: #c2f4fb;
+}
+
+.homecontent{
+    width: 100%;
+}
+
+.cabutton {
+  transition: transform 0.3s ease;
+}
+
+.cabutton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.mainimg{
+    width: 500px;
+}
+
+.loresec{
+    background-color: #062c6c;
+    color: #dee2e6;
+}
+
+.Images-socialmedia {
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Images-socialmedia img {
+  box-shadow: 0.52vw 0.52vw 0.26vw 0px rgba(0,0,0,0.75);
+  width: 16vw;
+}
+
+.icons-container {
+  margin-top: 1.1vw;
+  padding: 1.15vw;
+  display: flex;
+  column-gap: 1.45vw;
+}
+
+.icons-container a {
+  overflow: hidden;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: 0.15vw solid #fff;
+  outline-offset: 0.17vw;
+  transition-property: outline-offset, outline-color;
+  transition-duration: 0.275s;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.icons-container a:hover {
+  outline-offset: 5px;
+  animation: shake 0.55s;
+}
+
+#boop-border:hover {
+  outline: 2px solid gray;
+}
+
+#dex-border:hover {
+  outline: 2px solid black;
+}
+
+#xtwc-border:hover {
+  outline: 2px solid rgb(0, 0, 0);
+}
+
+#telegram-border:hover {
+  outline: 2px solid #1883bb;
+}
+
+#boop-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#dex-icon {
+  width: px;
+  height: 50px;
+}
+
+#Xtwi-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#telegram-icon {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes shake {
+  10%{
+      transform: rotate(15deg);
+  }
+  20%{
+      transform: rotate(-15deg);
+  }
+  30%{
+      transform: rotate(15deg);
+  }
+  40%{
+      transform: rotate(-15deg);
+  }
+}
+
+.dogpaw-strip {
+  background-color: white;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.dogpaw-slide {
+  background-image: url('../assets/dogpaw.svg');
+  background-repeat: repeat-x;
+  background-size: 30px;
+  height: 100%;
+  width: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: scroll-paws 25s linear infinite;
+  background-position: left center;
+  background-repeat: repeat-x;
+  background-size: 30px;
+  background-position-x: 0;
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.dog-feet {
+  position: absolute;
+  width: 7vw;
+  bottom: 20px;
+  z-index: 10;
+}
+
+.left-foot {
+  left: 15%;
+  bottom: 5%;
+  transform: rotate(40deg);
+  animation: moveFeetLeft 4s ease-in-out infinite;
+}
+
+.right-foot {
+  right: 15%;
+  bottom: 10%;
+  transform: rotate(-30deg);
+  animation: moveFeetRight 4s ease-in-out infinite;
+}
+
+@keyframes moveFeetLeft {
+  0%, 100% {
+    transform: translateX(0) translateY(0) rotate(40deg);
+  }
+  50% {
+    transform: translateX(-50px) translateY(30px) rotate(40deg);
+  }
+}
+
+@keyframes moveFeetRight {
+  0%, 100% {
+    transform: translateX(0) translateY(0) rotate(-30deg);
+  }
+  50% {
+    transform: translateX(50px) translateY(30px) rotate(-30deg);
+  }
+}
+
+
+
+
+@keyframes scroll-paws {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+@media (max-width: 600px) {
+  .mainimg {
+      width: 300px;
+  }
+  .cabutton{
+    width: 300px !important;
+    overflow: hidden;
+  }
+  #solana-address {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 100%; 
+  }
+  .sectitle{
+    font-size: 40px;
+  }
+  #joinbtn{
+    width: 300px !important;
+  }
+  .dog-feet{
+    width: 70px;
+  }
+}
