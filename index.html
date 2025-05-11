@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,10 +11,11 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navmains navbar-expand-lg sticky-top">
+  <nav id="navbar" class="navbar navmains navbar-expand-lg sticky-top">
     <div class="container">
       <a class="navbar-brand navbrd p-2" href="#">Boopy</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -29,30 +31,31 @@
     </div>
   </nav>
 
-  <div id="copy-alert" class="alert alert-dismissible d-none" role="alert"
-  style="position: fixed; top: 100px; right: 20px; z-index: 1050; 
+  <div id="copy-alert" class="alert alert-dismissible d-none" role="alert" style="position: fixed; top: 100px; right: 20px; z-index: 1050; 
          background-color: rgba(33, 171, 245, 0.9); 
          color: white; 
          opacity: 0; 
          transition: opacity 0.5s ease;">
-Address copied to clipboard!
-<button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+    Address copied to clipboard!
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
 
 
   <!-- Home Section -->
   <section id="home" class="homesec text-center">
     <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center homecontent">
-      
+
       <div class="mb-4 mb-lg-0">
         <img class="mainimg" src="./assets/boopy.png" alt="">
       </div>
-      
+
       <div class="d-flex justify-content-center gap-4 flex-column p-4 text-center text-lg-start">
-        <h1 class="mb-0"><span style="color: #062c6c; font-size:50px;">$Boopy</span> The First Dog Coin Ever Created On Boop.fun</h1>
-        
-        <div class="d-flex cabutton align-items-center border p-3 rounded mx-auto mx-lg-0" style="width: fit-content; background-color:#062c6c;" onclick="copyAddress()" title="Copy address">
-          <button class="btn me-2" style="outline: 2px solid white;" >
+        <h1 class="mb-0"><span style="color: #062c6c; font-size:50px;">$Boopy</span> The First Dog Coin Ever Created On
+          Boop.fun</h1>
+
+        <div class="d-flex cabutton align-items-center border p-3 rounded mx-auto mx-lg-0"
+          style="width: fit-content; background-color:#062c6c;" onclick="copyAddress()" title="Copy address">
+          <button class="btn me-2" style="outline: 2px solid white;">
             📋
           </button>
           <span class="text-white">CA:</span>
@@ -60,86 +63,142 @@ Address copied to clipboard!
             B3G2112eok3HevcHsKm2wmstrsqtz54utzRVXaRboop
           </span>
         </div>
-  
+
       </div>
-  
+
     </div>
   </section>
-  
+
 
   <div style="overflow: hidden; background-color:#c2f4fb; line-height: 0; margin-bottom: -2px;">
     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100px; width: 100%;">
       <path d="M0.00,49.98 C150.00,150.00 349.82,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-            style="stroke: none; fill: #062c6c;"></path>
+        style="stroke: none; fill: #062c6c;"></path>
     </svg>
   </div>
 
   <!-- About Section -->
-  <section id="about" class="loresec" style="padding-bottom: 100px;">
+  <section id="about" class="loresec" style="padding-bottom: 100px; position:relative;">
     <div class="container">
       <h2 class="mb-4 sectitle">About</h2>
       <div class="mb-5" style="width: 100%; height: 4px; background-color:white; border: radius 2px; "></div>
-      <div class="row align-items-center mb-5">
-        <div class="col-md-6">
-          <h4>$Boopy on $Boop</h4>
-          <p>Boopy is the very first dog-themed token ever launched on the boop.fun platform, making it a truly historic release. As the second token to debut on the platform, Boopy carries both uniqueness and legacy, paving the way for more fun, community-driven projects in the Boop ecosystem.</p>
+      <div class="abcontain">
+        <div class="row align-items-start">
+          <div class="abtext col-md-6">
+            <h4>$Boopy on $Boop</h4>
+            <p>Boopy is the very first dog-themed token ever launched on the boop.fun platform, making it a truly
+              historic release. As the second token to debut on the platform, Boopy carries both uniqueness and legacy,
+              paving the way for more fun, community-driven projects in the Boop ecosystem.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="./assets/boopnboopy.jpeg" class="img-fluid rounded" alt="Gambar 1">
+          </div>
         </div>
-        <div class="col-md-6 text-center">
-          <img src="./assets/boopnboopy.jpeg" class="img-fluid rounded" alt="Gambar 1">
+
+        <div class="row align-items-start flex-md-row-reverse">
+          <div class="abtext col-md-6">
+            <h4>$Boopy Potential</h4>
+            <p>Boopy isn't just the first dog token on Boop.fun — it's a symbol of what's possible when creativity meets
+              community. With its adorable charm and strong early momentum, Boopy has the potential to become the face
+              of meme culture on the Solana network. As more users discover the fun and utility behind the Boop.fun
+              ecosystem, Boopy stands poised to lead the next wave of lighthearted, community-powered tokens.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="./assets/boopycoin.jpeg" class="img-fluid rounded" alt="Gambar 2">
+          </div>
+        </div>
+
+        <div class="row align-items-start">
+          <div class="abtext col-md-6 ">
+            <h4>$Boopy is the first Dog on Boop!</h4>
+            <p>Boopy has marked its territory in the BOOP ecosystem by being the very 1st dog to enter the space. Boopy
+              is not just a dog, but a community full of passionate BOOP lovers joining together to represent BOOP with
+              $BOOPY! As we are the 2nd official token created, we take pride in shaping the BOOP ecosystem and look to
+              be influential figures in this space. Join us at our weekly X spaces @BoopyMeme !</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="./assets/boopavsboopy.jpeg" class="img-fluid rounded" alt="Gambar 3">
+          </div>
         </div>
       </div>
-  
-      <div class="row align-items-center mb-5 flex-md-row-reverse">
-        <div class="col-md-6">
-          <h4>$Boopy Potential</h4>
-          <p>Boopy isn't just the first dog token on Boop.fun — it's a symbol of what's possible when creativity meets community. With its adorable charm and strong early momentum, Boopy has the potential to become the face of meme culture on the Solana network. As more users discover the fun and utility behind the Boop.fun ecosystem, Boopy stands poised to lead the next wave of lighthearted, community-powered tokens.</p>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="./assets/boopycoin.jpeg" class="img-fluid rounded" alt="Gambar 2">
-        </div>
-      </div>
-  
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h4>$Boopy is the first Dog on Boop!</h4>
-          <p>Boopy has marked its territory in the BOOP ecosystem by being the very 1st dog to enter the space. Boopy is not just a dog, but a community full of passionate BOOP lovers joining together to represent BOOP with $BOOPY! As we are the 2nd official token created, we take pride in shaping the BOOP ecosystem and look to be influential figures in this space. Join us at our weekly X spaces @BoopyMeme !</p>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="./assets/boopavsboopy.jpeg" class="img-fluid rounded" alt="Gambar 3">
-        </div>
-      </div>
-  
+
     </div>
   </section>
 
-  <div class="dogpaw-strip bg-light mt-2">
-    <div class="dogpaw-slide"></div>
+  <div class="bg-light" style="overflow: hidden; z-index: 0; line-height: 0; margin-top: -2px;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+         style="height: 100px; width: 100%; display: block; transform: scaleX(-1);">
+      <path d="M0.00,100.00 C150.00,0.00 349.82,200.00 500.00,100.00 L500.00,0.00 L0.00,0.00 Z"
+            style="stroke: none; fill: #062c6c;"></path>
+    </svg>
   </div>
   
+  
+
+  <!--Proof Section-->
+  <section id="proofsec" class="bg-light">
+    <div class="container my-5">
+      <h3 style="color: #062c6c; font-weight:bold" class="mb-5 text-center">$Boopy is the first dog on boopfun and also the second token ever launched!</h3>
+      <div class="row align-items-start">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <img src="./assets/proof1.jpg" alt="Screenshot 3" class="screenshot-img fade-on-scroll">
+        </div>
+        <div class="col-md-6">
+          <h5>You can check by yourself!</h5>
+          <p>All you need to do is go to boop.fun website and click oldest on the filter tab, and $Boopy will appear there as the third token created, but testing token doesn't count, so $Boopy is officially the second token ever launched on the platform while also the first dog!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <h4 style="color: #062c6c; font-weight:bold" class="mb-4 text-center">Other token try to steal $Boopy's title as the first dog on boopfun but the blockchain never lie!</h4>
+      <div class="row g-4">
+        <div class="col-md-6 mt-4">
+          <img src="./assets/proof2.jpg" alt="Screenshot 1" class="screenshot-img fade-on-scroll">
+          <p class="screenshot-description">$Boopy created 3 hours earlier</p>
+        </div>
+        <div class="col-md-6 mt-4">
+          <img src="./assets/proof3.jpg" alt="Screenshot 2" class="screenshot-img fade-on-scroll">
+          <p class="screenshot-description">And then the so called first dog on boopfun created 3 hours after $Boopy!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dogpaw-strip pt-2">
+    <div class="dogpaw-slide"></div>
+  </div>
+
 
   <!-- Socials Section -->
-  <section id="socials" class="bg-light py-4">
+  <section id="socials" class="socialsec py-4">
     <div class="container text-center">
       <h2 style="color: #062c6c" class="sectitle">Join Our Journey!</h2>
       <div class="Images-socialmedia">
         <div class="icons-container">
-            <a id="boop-border" title="BoopDotFun" href="https://boop.fun/tokens/B3G2112eok3HevcHsKm2wmstrsqtz54utzRVXaRboop"><img id="boop-icon" src="./assets/boopdotfun.png" alt="BoopDotFun"></a>
-            <a id="dex-border" title="DexScreener" href="https://dexscreener.com/solana/j29qzc2qi66yusccshajtsicfnwuotdddtscdlwu8qeq"><img id="dex-icon" src="./assets/dex-screener.png" alt="DexScreener"></a>
-            <a id="xtwc-border" title="Twitter (X)" href="https://x.com/BoopyMeme"><img id="Xtwi-icon" src="./assets/twitter-x-logo.jpg" alt="X(Twitter)"></a>
-            <a id="telegram-border" title="LinkedIn" href="https://t.co/rFjpd2Itl8"><img id="telegram-icon" src="./assets/telegram.png" alt="Telegram"></a>
+          <a id="boop-border" title="BoopDotFun"
+            href="https://boop.fun/tokens/B3G2112eok3HevcHsKm2wmstrsqtz54utzRVXaRboop"><img id="boop-icon"
+              src="./assets/boopdotfun.png" alt="BoopDotFun"></a>
+          <a id="dex-border" title="DexScreener"
+            href="https://dexscreener.com/solana/j29qzc2qi66yusccshajtsicfnwuotdddtscdlwu8qeq"><img id="dex-icon"
+              src="./assets/dex-screener.png" alt="DexScreener"></a>
+          <a id="xtwc-border" title="Twitter (X)" href="https://x.com/BoopyMeme"><img id="Xtwi-icon"
+              src="./assets/twitter-x-logo.jpg" alt="X(Twitter)"></a>
+          <a id="telegram-border" title="LinkedIn" href="https://t.co/rFjpd2Itl8"><img id="telegram-icon"
+              src="./assets/telegram.png" alt="Telegram"></a>
         </div>
       </div>
       <div style="position: relative;">
         <a href="https://t.co/rFjpd2Itl8" style="position: relative; display: inline-block;">
-          <img id="joinbtn" style="width: 30vw;" src="./assets/joinbutton.png" alt="Join Button">
+          <img id="joinbtn" src="./assets/joinbutton.png" alt="Join Button">
           <img src="./assets/dogfeet.png" class="dog-feet left-foot" alt="Left Foot">
           <img src="./assets/dogfeet.png" class="dog-feet right-foot" alt="Right Foot">
         </a>
-      </div>         
+      </div>
     </div>
   </section>
-  
-  <div class="dogpaw-strip bg-light">
+
+  <div class="dogpaw-strip">
     <div class="dogpaw-slide"></div>
   </div>
 
@@ -149,9 +208,10 @@ Address copied to clipboard!
       Disclaimer: Crypto investments involve significant risk. Do your own research before investing.
     </small>
   </footer>
-  
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
+
 </html>
